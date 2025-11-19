@@ -1,0 +1,21 @@
+
+image:
+  size: 128
+  channels: 1   # 1=grayscale after segmentation
+  seq_len: 16
+
+train:
+  batch_size: 32
+  epochs: 50
+  lr: 0.001
+  val_split: 0.1
+  test_split: 0.1
+
+preprocess:
+  use_bg_subtractor: true
+  skin_hsv_lower: [0, 30, 60]
+  skin_hsv_upper: [20, 170, 255]
+  brightness_delta: 0.15
+  contrast_delta: 0.15
+  rotation_deg: 10.0
+  horizontal_flip: true
