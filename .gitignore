@@ -1,0 +1,12 @@
+.venv/ 
+venv/ 
+dataset/ 
+models/*.h5 
+models/*.hdf5 
+models/*.keras 
+*.pyc 
+__pycache__/ 
+.vscode/ 
+.idea/ 
+*.dll 
+*.pyd 
